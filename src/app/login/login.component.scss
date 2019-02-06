@@ -1,0 +1,19 @@
+$grey:#585859;
+$blue:#0077C5;
+
+#login{
+    overflow:hidden;
+    .login{
+        width: 100%;
+        .fields{            
+            .lost-pass{
+                font-family: "Mukta";
+                font-weight: bold;
+                font-size: 12px;
+                text-align: right;
+ 
+            }
+        }
+
+    }
+}

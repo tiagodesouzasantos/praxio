@@ -1,0 +1,48 @@
+<section id="register" fxLayout="column" fxLayoutAlign="space-between" fxFlex="100">
+  <div class="register" fxLayout="column" fxLayoutAlign="center" fxFlex="100">
+    <div fxFlex="100" fxLayout="row wrap"  fxLayoutAlign="center">
+      <div fxFlex="33" fxLayout="column wrap">
+        <label class="title">Cadastrar</label>
+        <label class="sub-title">Informações Pessoais</label>
+        <div fxLayout="row" fxLayoutAlign="start">
+          <input fxFlex="1 1 100" type="text" placeholder="Nome/Razão Social">
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start">
+          <input fxFlex="1 1 50" type="text" placeholder="CPF">
+          <input fxFlex="1 1 50" type="text" placeholder="Telefone">
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start">
+          <input fxFlex="1 1 100" type="email" placeholder="E-mail">
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start">
+          <input fxFlex="1 1 100" type="password" placeholder="Senha">
+        </div>
+      </div>
+      <div fxFlex="33" fxLayout="column wrap">
+        <label class="title">&nbsp;</label>
+        <label class="sub-title">Endereço</label> 
+        <div fxLayout="row" fxLayoutAlign="start">
+          <input fxFlex="1 1 25" type="text" placeholder="CEP">
+          <input fxFlex="1 1 75" type="text" placeholder="Logradouro">
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start">
+          <input fxFlex="1 1 25" type="text" placeholder="Numero">
+          <input fxFlex="1 1 75" type="text" placeholder="Bairro">
+        </div>
+      </div>
+    </div>
+    <div fxLayout="column" fxFlex="100" fxLayoutAlign="center">
+      <div fxLayout="row" fxLayoutAlign="center">
+        <button fxFlex="1 1 33">
+          <span>Cadastrar</span>
+        </button>
+      </div>
+      <div class="route-link">
+        <span routerLink="/login" routerLinkActive="active">Já tem uma conta? Faça login</span>
+      </div>
+    </div>
+  </div>
+  <footer fxLayoutAlign="center">
+    <img src="/assets/img/login/bottom-card.svg" alt="">
+  </footer>
+</section>

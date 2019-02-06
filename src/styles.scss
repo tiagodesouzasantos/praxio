@@ -1,0 +1,67 @@
+$purple: #7626FF;
+$borde-color: #C2C2C2;
+$white: #FFFFFF;
+$placeholder: #CAD0DC;
+$grey:#585859;
+$blue:#0077C5;
+
+button{
+    border:none;
+    background-color: $purple;
+    box-shadow: 0px 10px 39px 0px rgba(134,127,246,1);
+    line-height: 36px;
+    border-radius: 36px;
+    height: 60px;
+    margin-top:21px;
+    span{
+        color: white;
+        font-family: "Mukta";
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+input {
+    height: 42px;
+    line-height: 42px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid $borde-color;
+    background-color: $white;
+    margin: 10px;
+    padding-left: 27px;
+}
+input::placeholder {
+    color: $placeholder;
+    font-family: "Mukta";
+}
+
+footer{
+    height: 173px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+label{
+    letter-spacing: -7;
+    color: $grey;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin: 10px;
+    line-height: 27px;
+}
+
+label.title{
+    font-size: 29px;
+}
+label.sub-title{
+    font-size: 16px;
+}
+.route-link{
+    font-family: "Mukta";
+    font-size: 16px;
+    text-align: center;
+    color: $blue;
+    margin-top:20px;
+}
