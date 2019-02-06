@@ -1,23 +1,20 @@
 <section id="login" fxLayout="column" fxLayoutAlign="space-between" fxFlex="100">
-  <div class="login" fxLayoutAlign="center" fxFlex="100">
-    <div fxFlex="33"  class="fields" fxLayout="column wrap" fxLayoutAlign="center">
-      <label class="title">Entrar</label>
-      <input  type="email" placeholder="E-mail">
-      <input type="password" placeholder="Senha">
-      <div class="lost-pass">
-        <span>ESQUECEU A SENHA?</span>
-      </div>
-      <button>
-        <span>Entrar</span>
-      </button>
-      <div class="route-link">
-        <span routerLink="/register" routerLinkActive="active">Não tem uma conta? Cadastre-se</span>
+  <form name="login">
+    <div class="login" fxLayoutAlign="center" fxFlex="100">
+      <div fxFlex="33"  class="fields" fxLayout="column wrap" fxLayoutAlign="center">
+        <label class="title">Entrar</label>
+        <input required  (ngModel)="login.email" type="email" placeholder="E-mail">
+        <input required (ngModel)="login.senha" type="password" placeholder="Senha">
+        <div class="lost-pass">
+          <span>ESQUECEU A SENHA?</span>
+        </div>
+        <button (click)="submit(login)">Entrar</button>
+        <div class="route-link">
+          <span routerLink="/register" routerLinkActive="active">Não tem uma conta? Cadastre-se</span>
+        </div>
       </div>
     </div>
-  </div>
-  <div fxFlex="100">
-
-  </div>
+  </form>
   <footer fxLayoutAlign="center">
       <img src="/assets/img/login/bottom-card.svg" alt="">
   </footer>
