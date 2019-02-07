@@ -1,3 +1,10 @@
-<section fxLayout="row wrap" fxLayoutAlign="end" fxFlex="100">
-  <button fxFlex="1 1 10" (click)="logout()">logout</button>
+<section id="home" fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100">
+  <div fxFlex="1 1 10" fxFlex.xs="1 1 50" fxLayout="row wrap">
+    <button fxFlex="1 1 100" fxFlex.xs="1 1 50" fxLayoutAlign="center start" (click)="logout()">Logout</button>
+  </div>
+  <div fxLayoutAlign="center center" fxFlex="100">
+    <img class="fontimg" fxFlex="1 1 100" src="/assets/img/home/bg-front.svg" alt="" srcset="">
+    <img class="testeImg" src="/assets/img/home/front-test.svg" alt="" srcset="">
+    <!-- Não consegui me dedicar o suficiente para o termino deste item  -->
+  </div>
 </section>

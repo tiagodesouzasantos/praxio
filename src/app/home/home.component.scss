@@ -1,0 +1,25 @@
+@import "_variables.scss";
+#home{
+    button{
+        background-color: $white;
+        color: $grey;
+        font-size:16px;
+        border-radius: 32px;
+        border:2px solid $lightGrey;
+        box-shadow:none;
+        height: 32px;
+        line-height: 26px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+    .testeImg{
+        position: relative;
+        top:0;
+        left: -105vh;
+    }
+    .fontimg{
+        margin-left: 60vh;
+        margin-top: -50px;
+    }
+}

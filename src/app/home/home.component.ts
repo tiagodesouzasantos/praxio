@@ -8,9 +8,12 @@ import { Router } from "@angular/router";
 })
 export class HomeComponent implements OnInit {
 
+  login = sessionStorage.getItem('login');
   constructor(private router: Router) { }
-
   ngOnInit() {
+      if (!this.login) {
+        this.router.navigate(['/']);
+      }
   }
   logout(){
     sessionStorage.clear();

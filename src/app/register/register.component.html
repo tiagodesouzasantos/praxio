@@ -10,8 +10,8 @@
               <input [(ngModel)]="user.nomeRazaoSocial" name="nomeRazaoSocial" required fxFlex="1 1 100" type="text" placeholder="Nome/Razão Social">
             </div>
             <div fxLayout="row" fxLayoutAlign="start">
-              <input [(ngModel)]="user.cpfcnpj" name="cpfcnpj" required fxFlex="1 1 50" type="text" placeholder="CPF">
-              <input [(ngModel)]="user.telefone" name="telefone" required fxFlex="1 1 50" type="text" placeholder="Telefone">
+              <input [(ngModel)]="user.cpfcnpj" name="cpfcnpj" required fxFlex="1 1 50" type="number" max="99999999999" placeholder="CPF">
+              <input [(ngModel)]="user.telefone" name="telefone" required fxFlex="1 1 50" type="number" max="9999999999999" placeholder="Telefone">
             </div>
             <div fxLayout="row" fxLayoutAlign="start">
               <input [(ngModel)]="user.email" name="email" required fxFlex="1 1 100" type="email" placeholder="E-mail">
@@ -24,11 +24,11 @@
             <label class="title">&nbsp;</label>
             <label class="sub-title">Endereço</label> 
             <div fxLayout="row" fxLayoutAlign="start">
-              <input [(ngModel)]="user.cep" name="cep" required fxFlex="1 1 25" type="text" placeholder="CEP">
+              <input [(ngModel)]="user.cep" name="cep" required fxFlex="1 1 25" type="number" max="99999999" placeholder="CEP">
               <input [(ngModel)]="user.logradouro" name="logradouro" required fxFlex="1 1 75" type="text" placeholder="Logradouro">
             </div>
             <div fxLayout="row" fxLayoutAlign="start">
-              <input [(ngModel)]="user.numero" name="numero" required fxFlex="1 1 25" type="text" placeholder="Numero">
+              <input [(ngModel)]="user.numero" name="numero" required fxFlex="1 1 25" type="number" max="999999" placeholder="Numero">
               <input [(ngModel)]="user.bairro" name="bairro" required fxFlex="1 1 75" type="text" placeholder="Bairro">
             </div>
           </div>
@@ -36,12 +36,9 @@
       <div fxLayout="column" fxFlex="100" fxLayoutAlign="center">
         <div fxLayout="row" fxLayoutAlign="center">
         <button fxFlex="1 1 33" (click)="save()">Cadastrar</button>
-          <!-- <input type="submit" fxFlex="1 1 33" value="Cadastrar"> -->
-            <!-- <span>Cadastrar</span>
-          </button> -->
         </div>
         <div class="route-link">
-          <span routerLink="/login" routerLinkActive="active">Já tem uma conta? Faça login</span>
+          <span routerLink="/" routerLinkActive="active">Já tem uma conta? Faça login</span>
         </div>
       </div>
     </div>
