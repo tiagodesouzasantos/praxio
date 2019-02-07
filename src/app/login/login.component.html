@@ -3,12 +3,12 @@
     <div class="login" fxLayoutAlign="center" fxFlex="100">
       <div fxFlex="33"  class="fields" fxLayout="column wrap" fxLayoutAlign="center">
         <label class="title">Entrar</label>
-        <input required  (ngModel)="login.email" type="email" placeholder="E-mail">
-        <input required (ngModel)="login.senha" type="password" placeholder="Senha">
+        <input required  [(ngModel)]="login.email" name="email" type="email" placeholder="E-mail">
+        <input required [(ngModel)]="login.senha" name="senha" type="password" placeholder="Senha">
         <div class="lost-pass">
           <span>ESQUECEU A SENHA?</span>
         </div>
-        <button (click)="submit(login)">Entrar</button>
+        <button (click)="submit()">Entrar</button>
         <div class="route-link">
           <span routerLink="/register" routerLinkActive="active">Não tem uma conta? Cadastre-se</span>
         </div>
